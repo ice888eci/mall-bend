@@ -1,0 +1,32 @@
+{
+  "name": "app-bend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "./node_modules/.bin/node-dev ./bin/www",
+    "start": "pm2 start ./bin/www --watch -i max --name mallbend",
+    "restart": "pm2 restart ./bin/www",
+    "stop": "pm2 stop mallbend",
+    "list": "pm2 list",
+    "log": "pm2 logs"
+  },
+  "dependencies": {
+    "@alicloud/pop-core": "^1.7.10",
+    "alipay-sdk": "^3.1.7",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "md5": "^2.2.1",
+    "mysql": "^2.16.0",
+    "node-dev": "^3.1.3",
+    "redis": "^3.1.2"
+  }
+}
